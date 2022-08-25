@@ -1,5 +1,19 @@
+:root {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
 body {
   width: 100%;
   min-height: 100vh;
   background-color: var(--bg-color);
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
 }

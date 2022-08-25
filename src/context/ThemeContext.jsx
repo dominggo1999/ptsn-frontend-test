@@ -26,6 +26,7 @@ const ThemeProvider = ({ children }) => {
     return {
       theme,
       toggleTheme,
+      isDark: theme === 'dark',
     };
   }, [theme]);
 

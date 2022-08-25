@@ -1,0 +1,18 @@
+.theme-switch {
+  width: 2.75em;
+  height: 2.75em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  border-radius: 0.25em;
+  color: white;
+}
+
+.theme-switch:hover {
+  background: var(--primary-hover);
+}
+
+.theme-switch--icon {
+  font-size: 1.75em;
+}
