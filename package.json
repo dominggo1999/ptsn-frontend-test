@@ -1,0 +1,34 @@
+{
+  "name": "css-module",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "ladle build && vite build",
+    "preview": "vite preview",
+    "ladle:dev": "ladle serve",
+    "ladle:build": "ladle build",
+    "ladle:preview": "ladle preview"
+  },
+  "dependencies": {
+    "@ladle/react": "^2.2.1",
+    "modern-normalize": "^1.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.1",
+    "eslint": "^8.22.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-import-resolver-custom-alias": "^1.3.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "vite": "^3.0.7"
+  }
+}
