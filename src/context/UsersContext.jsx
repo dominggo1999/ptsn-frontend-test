@@ -1,4 +1,6 @@
-import React, { createContext, useMemo, useState } from 'react';
+import React, {
+  createContext, useMemo, useState, useEffect,
+} from 'react';
 
 export const UsersContext = createContext({});
 
@@ -19,11 +21,22 @@ const UsersProvider = ({ children }) => {
       setError('');
     } catch (error) {
       setUsers([]);
-      setError('Something went wrong went getting all users');
+
+      if (abortController.signal.aborted) {
+        setError('Request Canceled');
+      } else {
+        setError('Something went wrong went getting all users');
+      }
     } finally {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    return () => {
+      abortController.abort();
+    };
+  }, []);
 
   const usersValue = useMemo(() => {
     return {
